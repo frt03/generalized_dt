@@ -37,21 +37,22 @@ python download_d4rl_datasets.py
 
 Run train_cdt.py to train Categorical DT:
 ```
-python train_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --distributions 'categorical' --condition 'reward' --save_model True
+python train_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --condition 'reward' --save_model True
 
-python train_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --distributions 'categorical' --condition 'xvel' --save_model True
+python train_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --condition 'xvel' --save_model True
 ```
 
 Run eval_cdt.py to eval CDT using saved weights:
 ```
-python eval_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --distributions 'categorical' --condition 'reward' --eval_target 'fix' --save_rollout True
+python eval_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --condition 'reward' --save_rollout True
+python eval_cdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --condition 'xvel' --save_rollout True
 ```
 
 
 For Bi-directional DT, run train_bdt.py & eval_bdtf.py
 ```
 python train_bdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --z_dim 16 --save_model True
-python eval_bdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --eval_target 'fix' --z_dim 16 --save_rollout True
+python eval_bdt.py --env halfcheetah --dataset medium-expert --gpu 0 --seed 0 --dist_dim 30 --n_bins 31 --z_dim 16 --save_rollout True
 ```
 
 ## Reference
