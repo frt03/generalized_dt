@@ -1,14 +1,14 @@
 # Generalized Decision Transformer for Offline Hindsight Information Matching
 
-[[arxiv]](https://arxiv.org/abs/2111.10364)
+[[arxiv]](https://arxiv.org/abs/2111.10364), Accepted to [ICLR2022](https://openreview.net/forum?id=CAjxVodl_v) (**Spotlight**)
 
 If you use this codebase for your research, please cite the paper:
 ```
-@article{furuta2021generalized,
+@inproceedings{furuta2021generalized,
   title={Generalized Decision Transformer for Offline Hindsight Information Matching},
   author={Hiroki Furuta and Yutaka Matsuo and Shixiang Shane Gu},
-  journal={arXiv preprint arXiv:2111.10364},
-  year={2021}
+  booktitle={International Conference on Learning Representations},
+  year={2022}
 }
 ```
 
