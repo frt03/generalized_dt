@@ -12,6 +12,8 @@ If you use this codebase for your research, please cite the paper:
 }
 ```
 
+Also, see [Decision Transformer implementation written in Jax](https://github.com/frt03/jax_dt).
+
 
 ## Installation
 
